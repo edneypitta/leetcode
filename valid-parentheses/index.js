@@ -15,7 +15,7 @@ var isValid = function (s) {
     if (stack.pop() !== getOpeningChar(char)) return false;
   }
 
-  return true;
+  return stack.length === 0;
 };
 
 var getOpeningChar = function (char) {
